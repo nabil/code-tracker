@@ -1,0 +1,12 @@
+.active {
+  background: rgba(0,0,0,.03);
+  color: rgba(0,0,0,.95);
+}
+
+.ui.menu .pointing.dropdown.item .menu {
+  margin-top: 0;
+}
+
+.ui.dropdown .menu {
+  font-size: small;
+}

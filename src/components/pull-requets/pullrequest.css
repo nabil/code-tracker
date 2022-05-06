@@ -1,0 +1,22 @@
+.ui.card > .content, .ui.cards > .card > .content{
+    margin: 0px;
+}
+
+i.icon.approval-status {
+    margin: 0;
+    top: -12px;
+    left: -12px;
+    z-index: 88!Important;
+    position: relative;
+    width: 3px;
+}
+
+.reviewer-icon {
+    cursor: pointer;
+}
+
+.pr-description {
+    white-space: pre-wrap;
+    color: black;
+}
+

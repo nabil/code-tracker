@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: code-tracker
+  labels:
+    app: code-tracker
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: code-tracker
+  template:
+    metadata:
+      labels:
+        app: code-tracker
+    spec:
+      containers:
+      - name: code-tracker0
+        image: io.github.nabil/code-tracker:latest
+        resources:
+          limits:
+            memory: 500Mi
+            cpu: 500m
+        ports:
+        - containerPort: 80

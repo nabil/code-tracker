@@ -1,0 +1,21 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: code-tracker
+  labels:
+    name: code-tracker
+spec:
+  rules:
+  - host: code-tracker.rancher.localhost
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: code-tracker-service
+            port:
+              number: 80
+  tls:
+  - hosts:
+    - code-tracker.rancher.localhost

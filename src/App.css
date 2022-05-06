@@ -1,0 +1,26 @@
+.app {
+  text-align: center;
+}
+
+.app-footer-buffer {
+  height: 40px;
+}
+
+.app-footer {
+  position: fixed!important; 
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  color: black!important;
+  padding: 0px!important;
+  background-color: rgb(220, 233, 243)!important;
+}
+
+.tiny-image {
+  width: 25px;
+}
+
+.page-container {
+  padding-left: 20px!important;
+  padding-right: 20px!important;
+}
