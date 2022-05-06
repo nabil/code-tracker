@@ -1,21 +1,23 @@
 # Code Tracker
-A Solution Architect Tool for tracking projects Links, Pull Requests, Wiki Designs and Jira Tickets
+A Solution Architect Tool for tracking projects Links, Pull Requests, Wiki Designs and Jira Tickets.
 
-React application used for training/demo purpose only, not production ready code. 
+React application used for demo purpose only, not production ready. 
 
 The links Dashboard allow you to define quick links for fast access and access your pages in single click.
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nabil/code-tracker/main/content/images/links.jpg">
+  <img width="888" src="https://github.com/nabil/code-tracker/raw/main/content/images/links.jpg">
 </p>
 
 Once you configure a code repository in the Settings, you can start reviewing your pull requests from differents providers. 
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/nabil/code-tracker/main/content/images/pull_requests.jpg">
+  <img width="888" src="https://github.com/nabil/code-tracker/raw/main/content/images/pull_requests.jpg">
 </p>
 
 Currently the demo support Bitbucket, Gitlab and Github.
+
+To be added: Wiki Pages and Tickets, see [ToDo Task List](https://github.com/nabil/code-tracker/issues/1).
 
 # Where to start
 
