@@ -21,15 +21,15 @@ To be added: Wiki Pages and Tickets, see [ToDo Task List](https://github.com/nab
 
 # Where to start
 
-You first need to clonse the repository, then you can run the demo locally as follow:
+You first need to clone the repository, then you can run the demo locally as follow:
 
 ````sh
 git clone https://github.com/nabil/code-tracker.git && cd code-tracker
-yarn install
-yarn start
+npm install
+npm start
 ````
 
-Then open your browser at http://127.0.0.1:3008
+Then open your browser at http://127.0.0.1:3008/code-tracker
 
 If you want to use the demo container, you can build the image and run it as follow:
 

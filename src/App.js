@@ -11,7 +11,6 @@ import {
 import AppMenu from './components/menu/AppMenu';
 import routes from './configurations/routes';
 import { stats } from './services/storage';
-
 export default class App extends Component {
   render() {
     return (

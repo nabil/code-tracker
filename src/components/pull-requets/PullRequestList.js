@@ -16,7 +16,7 @@ import {
   loadRepositoriesConfiguration
 } from '../../services/storage';
 import PagedContent from '../PagedContent';
-import { adapt, repoTypePullRequestPath } from '../../configurations/repositoriesOptions';
+import { parse, repoTypePullRequestPath } from '../../configurations/repositoriesOptions';
 
 const searchFields = ['id', 'fromRepoName', 'title', 'description'];
 const filterItems = {
@@ -131,7 +131,7 @@ export default class PullRequests extends Component {
       .then((result) => {
         var data = JSON.parse(result);
         if (data !== undefined && data.values) {
-          return adapt(repository, data);
+          return parse(repository, data);
         };
       })
       .then(pullRequests => Promise.all(pullRequests.map(p => generateHash(p))));

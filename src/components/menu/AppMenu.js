@@ -93,7 +93,7 @@ class AppMenu extends Component {
         >
           <Container>
             <Menu.Item>
-              <Image size='mini' src='/logo.png' />
+              <Image size='mini' src={process.env.PUBLIC_URL + '/logo.png'} />
             </Menu.Item>
 
             <AppMenuItem

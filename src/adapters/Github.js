@@ -1,5 +1,5 @@
 export default class Gitlab {
-    adapt(repository, data) {
+    parse(repository, data) {
         return data.map(p => {
             let lastCommitLink = p.fromRef?.repository.links.self[0].href.substring(0, p.fromRef?.repository.links.self[0].href.length - 7) + '/commits/' + p.fromRef?.latestCommit;
             return {

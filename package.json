@@ -1,18 +1,19 @@
 {
-  "name": "project-tracker",
+  "name": "code-tracker",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://nabil.github.io/code-tracker",
   "dependencies": {
     "@reduxjs/toolkit": "^1.7.1",
     "cra-template": "1.1.2",
     "dompurify": "^2.3.6",
+    "history": "^5.3.0",
     "react": "17.0.0",
     "react-dom": "17.0.0",
     "react-hook-form": "^7.27.0",
-    "react-redux": "^7.2.6",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
-    "semantic-ui-css": "^2.4.1",
+    "react-scripts": "^5.0.1",
+    "semantic-ui-css": "git+https://github.com/Semantic-Org/Semantic-UI-CSS.git",
     "semantic-ui-react": "^2.0.4"
   },
   "scripts": {
@@ -64,15 +65,14 @@
     ]
   },
   "devDependencies": {
-    "@storybook/addon-actions": "^6.4.9",
-    "@storybook/addon-essentials": "^6.4.9",
-    "@storybook/addon-links": "^6.4.9",
-    "@storybook/node-logger": "^6.4.9",
-    "@storybook/preset-create-react-app": "^3.2.0",
-    "@storybook/react": "^6.4.9",
-    "react-error-overlay": "6.0.9"
+    "@storybook/addon-actions": "^6.4.22",
+    "@storybook/addon-essentials": "^6.4.22",
+    "@storybook/addon-links": "^6.4.22",
+    "@storybook/node-logger": "^6.4.22",
+    "@storybook/preset-create-react-app": "^1.2.0",
+    "@storybook/react": "^6.4.22"
   },
   "resolutions": {
-    "react-error-overlay": "6.0.9"
+    "react-error-overlay": "6.0.11"
   }
 }

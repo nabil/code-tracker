@@ -30,8 +30,8 @@ export function repoTypePullRequestPath(repository) {
     return repository.baseUrl + "/" + repositoriesOptions.filter(i => i.key === repository.type)[0].pullRequestsUri;
 }
 
-export function adapt(repository, data) {
-    return repositoriesOptions.filter(i => i.key === repository.type)[0].adapter.adapt(repository, data);
+export function parse(repository, data) {
+    return repositoriesOptions.filter(i => i.key === repository.type)[0].adapter.parse(repository, data);
 }
 
 export default repositoriesOptions;

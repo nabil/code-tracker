@@ -143,7 +143,7 @@ export default class Links extends Component {
   };
 
   handleLoadSampleLinks = () => {
-    fetch('/links/links-sample.json')
+    fetch(process.env.PUBLIC_URL + '/links/links-sample.json')
       .then(response => response.blob())
       .then(file => this.handleUploadLinks(file));
   }

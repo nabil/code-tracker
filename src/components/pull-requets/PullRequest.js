@@ -130,7 +130,7 @@ export default class PullRequest extends Component {
             <div className='one wide column'>
               {this.state.repositoryConfigLabel &&
                 (<i className='ui white right ribbon label'>
-                  <Image src={'/images/' + this.state.repositoryConfigType + '.png'} className='tiny-image' avatar={true} /> &nbsp;
+                  <Image src={process.env.PUBLIC_URL +'/images/' + this.state.repositoryConfigType + '.png'} className='tiny-image' avatar={true} /> &nbsp;
                   {this.state.repositoryConfigLabel}</i>)}
               <p />
               <i

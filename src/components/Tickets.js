@@ -91,7 +91,7 @@ export default class Tickets extends Component {
       tickets.length > 0 &&
       tickets.map((t, i) => (
         <List.Item key={i}>
-          {t.iconuri ? <Image size='mini' src={t.iconuri} /> : ''}
+          {t.iconuri ? <Image size='mini' src={process.env.PUBLIC_URL + t.iconuri} /> : ''}
           <List.Content>
             <List.Header as='a' href={t.uri} target='_blank'>
               {t.title}
