@@ -1,9 +1,9 @@
 # Code Tracker
 A Solution Architect Tool for tracking projects Links, Pull Requests, Wiki Designs and Jira Tickets.
 
-React application used for demo purpose only, not production ready. 
+Built with React and Semantic-UI, this app is for demo purpose only, not production ready. 
 
-The links Dashboard allow you to define quick links for fast access and access your pages in single click.
+The links Dashboard allow you to CRUD links or import and export links files per project.
 
 <p align="center">
   <img width="888" src="https://github.com/nabil/code-tracker/raw/main/content/images/links.jpg">
@@ -15,9 +15,11 @@ Once you configure a code repository in the Settings, you can start reviewing yo
   <img width="888" src="https://github.com/nabil/code-tracker/raw/main/content/images/pull_requests.jpg">
 </p>
 
-Currently the demo support Bitbucket, Gitlab and Github.
+Currently the demo support Bitbucket, Gitlab and Github and you can try it [here](https://nabil.github.io/code-tracker/). 
 
-To be added: Wiki Pages and Tickets, see [ToDo Task List](https://github.com/nabil/code-tracker/issues/1).
+Pending to be added: Metrics Filter for (Github and Gitlab), Wiki Pages and Tickets, see full [ToDo Task List](https://github.com/nabil/code-tracker/issues/1).
+
+You can try the demo [here](https://nabil.github.io/code-tracker/) or use it as a playground for testing, se how-to do it below.
 
 # Where to start
 
@@ -26,7 +28,7 @@ You first need to clone the repository, then you can run the demo locally as fol
 ````sh
 git clone https://github.com/nabil/code-tracker.git && cd code-tracker
 npm install
-npm start
+npm run start
 ````
 
 Then open your browser at http://127.0.0.1:3008/code-tracker
