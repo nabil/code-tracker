@@ -4,12 +4,15 @@ import {
   Table,
   Checkbox
 } from 'semantic-ui-react';
+import { v4 as uuidv4 } from 'uuid';
+
 import {
   loadRepositoriesConfiguration,
   saveRepositoriesConfiguration
 } from '../services/storage';
 import ConfirmationModal from './modal/Confirmation';
 import AddEditRepositoryModal from './modal/AddEditRepository';
+
 export default class Settings extends Component {
   constructor(props) {
     super(props);
@@ -44,7 +47,7 @@ export default class Settings extends Component {
       var index = repositories.findIndex((r) => r.label === data.label);
       if (index > -1) {
         repositories[index].active = data.checked;
-        repositories[index].contentId = crypto.randomUUID();
+        repositories[index].contentId = uuidv4();
       }
       console.debug('new id: ' + repositories[index].contentId);
       this.setRepositoriesConfiguration(repositories);

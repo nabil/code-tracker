@@ -6,6 +6,8 @@ import {
   Divider,
   List
 } from 'semantic-ui-react';
+import DOMPurify from 'dompurify';
+import { v4 as uuidv4 } from 'uuid';
 
 import './Links.css';
 import { loadLinks, saveLinks } from '../services/storage';
@@ -14,7 +16,6 @@ import AddEditLinkModal from './modal/AddEditLink';
 import ConfirmationModal from './modal/Confirmation';
 import { search } from '../services/search';
 import { toDate } from '../services/utils';
-import DOMPurify from 'dompurify';
 
 const linksSearchFields = ['title', 'uri'];
 
@@ -33,7 +34,7 @@ export default class Links extends Component {
     this.state = {
       searchFilters: searchFiltersDefaults,
       renderedLinks: this.getRenderedLinks(loadLinks()),
-      contentId: crypto.randomUUID(),
+      contentId: uuidv4(),
     };
 
     this.linksFileInput = React.createRef();
@@ -42,7 +43,7 @@ export default class Links extends Component {
   setLinks = (data) => {
     this.setState({
       renderedLinks: this.getRenderedLinks([...data]),
-      contentId: crypto.randomUUID(),
+      contentId: uuidv4(),
     });
   };
 
@@ -90,7 +91,7 @@ export default class Links extends Component {
   };
 
   handleAddLink = (link) => {
-    link.guid = crypto.randomUUID();
+    link.guid = uuidv4();
     link.dateAdded = new Date().getTime();
     link.lastModified = new Date().getTime();
     link.visible = true;

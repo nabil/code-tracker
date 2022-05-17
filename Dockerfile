@@ -1,7 +1,7 @@
 FROM node:18.1.0-alpine as code-tracker-build
 WORKDIR /app
 COPY package.json ./
-COPY package-lock.lock ./
+COPY package-lock.json ./
 RUN npm install
 COPY . ./
 RUN npm run build

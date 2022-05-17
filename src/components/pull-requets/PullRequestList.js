@@ -7,6 +7,7 @@ import {
   Divider,
   Segment
 } from 'semantic-ui-react';
+import { v4 as uuidv4 } from 'uuid';
 
 import PullRequest from './PullRequest';
 import { search } from '../../services/search';
@@ -53,7 +54,7 @@ export default class PullRequests extends Component {
       filterItems: filterItems,
       searchFilters: searchFiltersDefaults,
       renderedPullRequests: this.renderPullRequests(this.getPullRequests()),
-      contentId: crypto.randomUUID()
+      contentId: uuidv4()
     };
   }
 
@@ -71,7 +72,7 @@ export default class PullRequests extends Component {
     this.setState({
       filterItems: filterItems,
       renderedPullRequests: this.renderPullRequests(this.getPullRequests()),
-      contentId: crypto.randomUUID(),
+      contentId: uuidv4(),
     });
   }
 
@@ -93,7 +94,7 @@ export default class PullRequests extends Component {
     if (data !== undefined) {
       this.setState({
         renderedPullRequests: this.renderPullRequests([...data]),
-        contentId: crypto.randomUUID()
+        contentId: uuidv4()
       });
     }
   };

@@ -20,7 +20,7 @@ spec:
         image: io.github.nabil/code-tracker:latest
         resources:
           limits:
-            memory: 500Mi
+            memory: 555Mi
             cpu: 500m
         ports:
         - containerPort: 80
