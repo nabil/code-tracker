@@ -1,4 +1,4 @@
-FROM node:18.1.0-alpine as code-tracker-build
+FROM node:18.6.0-alpine as code-tracker-build
 WORKDIR /app
 COPY package.json ./
 COPY package-lock.json ./
